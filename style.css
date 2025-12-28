@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,700&display=swap');
 :root{
     --a:0;
+    --l:240px
 }
 body{
     background-color: black;
@@ -102,12 +103,13 @@ body{
     border-radius: 5px;
     background-color: #252525;
     position: relative;
-    transition: all 0.9s;
+    transition: all 0.4s;
 }
 .card:hover{
     cursor: pointer;
-    background-color: rgb(105, 103, 103);
+    background-color: rgb(86 86 86);
     --a:1;
+    --l:175px;
 }
 .spotifyPlaylist .card img{
     width: 100%;
@@ -126,10 +128,10 @@ body{
     align-items: center;
     justify-content: center;
     position: absolute;
-    top: 175px;
+    top: var(--l);
     right: 20px;
     opacity: var(--a);
-    transition: all 1s ease-out;
+    transition: all .4s ease-out;
 }
 .signupbtn{
     background-color: rgb(34,34,34);
@@ -193,8 +195,10 @@ body{
     border-radius: 5px;
     margin: 8px 0;
     justify-content: space-between;
-
 }
+
+.songlist ul li:hover{background-color: rgb(64 64 64);
+transition: all 0.3s ;}
 .playnow{
     display: flex;
     justify-content: center;
